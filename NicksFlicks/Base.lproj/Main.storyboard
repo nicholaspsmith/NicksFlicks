@@ -32,6 +32,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PnA-vp-Hlm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.59607843137254901" green="0.078431372549019607" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
