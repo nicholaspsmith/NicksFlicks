@@ -10,13 +10,19 @@ import UIKit
 
 class NewMovieVC: UIViewController {
 
+    @IBOutlet weak var descriptionTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        //Looks for single or multiple taps.
+        // Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
+        
+        descriptionTextView.layer.borderWidth = 1.0
+        descriptionTextView.layer.borderColor = UIColor(hex: 0xececec).CGColor
+        // #c1c1c1
+        descriptionTextView.layer.cornerRadius = 8
     }
 
     override func didReceiveMemoryWarning() {

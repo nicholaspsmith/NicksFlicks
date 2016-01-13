@@ -180,6 +180,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="Lei-xK-cVW" id="z8w-9z-Qnc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgb-Uv-rXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -14,6 +14,7 @@
 		0159F8261C446F2A00CA3C48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0159F8251C446F2A00CA3C48 /* Assets.xcassets */; };
 		0159F8291C446F2A00CA3C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0159F8271C446F2A00CA3C48 /* LaunchScreen.storyboard */; };
 		018DD5261C45F47500BBCEF6 /* NewMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */; };
+		018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		0159F8281C446F2A00CA3C48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0159F82A1C446F2A00CA3C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMovieVC.swift; sourceTree = "<group>"; };
+		018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0159F82A1C446F2A00CA3C48 /* Info.plist */,
 				0159F8221C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld */,
 				018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */,
+				018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */,
 			);
 			path = NicksFlicks;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				0159F81E1C446F2A00CA3C48 /* ViewController.swift in Sources */,
 				0159F81C1C446F2A00CA3C48 /* AppDelegate.swift in Sources */,
+				018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */,
 				018DD5261C45F47500BBCEF6 /* NewMovieVC.swift in Sources */,
 				0159F8241C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld in Sources */,
 			);
