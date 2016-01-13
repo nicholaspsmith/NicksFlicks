@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="604" y="689"/>
         </scene>
-        <!--View Controller-->
+        <!--New MovieVC-->
         <scene sceneID="Zkc-SU-nvK">
             <objects>
-                <viewController id="PmA-zV-8CG" sceneMemberID="viewController">
+                <viewController id="PmA-zV-8CG" customClass="NewMovieVC" customModule="NicksFlicks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uXA-kZ-yPo"/>
                         <viewControllerLayoutGuide type="bottom" id="rEq-cB-Y4C"/>
