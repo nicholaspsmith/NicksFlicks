@@ -8,38 +8,52 @@
 
 import UIKit
 
-class NewMovieVC: UIViewController, UITextViewDelegate {
+class NewMovieVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var addImgBtn: UIButton!
     let DescriptionPlaceholder = "Description"
+    var imagePicker: UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        descriptionTextView.delegate = self
+        imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
 
         // Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
         view.addGestureRecognizer(tap)
         
         // Make Text View look like Text Field
+        descriptionTextView.delegate = self
         descriptionTextView.layer.borderWidth = 1.0
         descriptionTextView.layer.borderColor = UIColor(hex: 0xececec).CGColor
         descriptionTextView.layer.cornerRadius = 8
         
         applyPlaceholderStyle(descriptionTextView, placeholderText: DescriptionPlaceholder)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func addImagePressed(sender: AnyObject) {
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
-    //Calls this function when the tap is recognized.
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        postImg.image = image
+        addImgBtn.setTitle("", forState: .Normal)
+    }
+    
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
+    
+    
+    
+    
+    /*** Placeholder functionality for TextView ***/
     
     func applyPlaceholderStyle(aTextview: UITextView, placeholderText: String)
     {

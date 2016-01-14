@@ -149,6 +149,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addImagePressed:" destination="PmA-zV-8CG" eventType="touchUpInside" id="B1O-GC-Gn2"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgp-Hh-sHw">
                                 <rect key="frame" x="180" y="253" width="240" height="30"/>
@@ -226,7 +229,9 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addImgBtn" destination="muf-1c-mMb" id="OqK-L6-VlI"/>
                         <outlet property="descriptionTextView" destination="Lei-xK-cVW" id="z8w-9z-Qnc"/>
+                        <outlet property="postImg" destination="DJh-0y-ZbW" id="hCu-CB-cX2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mgb-Uv-rXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
