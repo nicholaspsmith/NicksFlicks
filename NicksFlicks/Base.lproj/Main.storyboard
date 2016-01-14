@@ -182,7 +182,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxF-zl-f4X">
-                                <rect key="frame" x="180" y="301" width="240" height="30"/>
+                                <rect key="frame" x="180" y="305" width="240" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textField>
@@ -200,10 +200,10 @@
                             <constraint firstItem="muf-1c-mMb" firstAttribute="width" secondItem="DJh-0y-ZbW" secondAttribute="width" id="RpN-dd-Qsi"/>
                             <constraint firstItem="fgp-Hh-sHw" firstAttribute="width" secondItem="muf-1c-mMb" secondAttribute="width" id="X13-cx-kDu"/>
                             <constraint firstItem="OxF-zl-f4X" firstAttribute="centerX" secondItem="fwf-aT-qK5" secondAttribute="centerX" id="XJ5-Py-GPd"/>
-                            <constraint firstItem="Lei-xK-cVW" firstAttribute="top" secondItem="OxF-zl-f4X" secondAttribute="bottom" constant="30" id="Yub-d4-ELp"/>
+                            <constraint firstItem="Lei-xK-cVW" firstAttribute="top" secondItem="OxF-zl-f4X" secondAttribute="bottom" constant="22" id="Yub-d4-ELp"/>
                             <constraint firstItem="muf-1c-mMb" firstAttribute="height" secondItem="DJh-0y-ZbW" secondAttribute="height" id="ZgG-1i-Oiu"/>
                             <constraint firstItem="muf-1c-mMb" firstAttribute="centerX" secondItem="DJh-0y-ZbW" secondAttribute="centerX" id="aMg-fd-Qvs"/>
-                            <constraint firstItem="OxF-zl-f4X" firstAttribute="top" secondItem="fgp-Hh-sHw" secondAttribute="bottom" constant="18" id="faD-RE-yx0"/>
+                            <constraint firstItem="OxF-zl-f4X" firstAttribute="top" secondItem="fgp-Hh-sHw" secondAttribute="bottom" constant="22" id="faD-RE-yx0"/>
                             <constraint firstItem="OxF-zl-f4X" firstAttribute="width" secondItem="DJh-0y-ZbW" secondAttribute="width" id="j2l-dF-TuC"/>
                             <constraint firstItem="YdK-sm-m7W" firstAttribute="top" secondItem="fgp-Hh-sHw" secondAttribute="bottom" constant="170" id="mBI-Gj-zPZ"/>
                             <constraint firstItem="fgp-Hh-sHw" firstAttribute="width" secondItem="DJh-0y-ZbW" secondAttribute="width" id="nJe-eJ-hZ3"/>
