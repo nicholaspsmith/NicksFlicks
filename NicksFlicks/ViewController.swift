@@ -18,6 +18,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+        
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +29,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        if let cell = tableView.dequeueReusableCellWithIdentifier("TableViewCell") as? TableViewCell {
+            let movie = movies[indexPath.row]
+            cell.configureCell(movie)
+            return cell
+        } else {
+            return TableViewCell()
+        }
+        
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {

@@ -26,5 +26,12 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configureCell(movie: Movie) {
+        title.text = movie.title
+        desc.text = movie.movie_description
+        imdb.text = movie.imdb
+        img.image = movie.getMovieImage()
+    }
 
 }
