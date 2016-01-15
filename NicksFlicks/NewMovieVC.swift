@@ -52,6 +52,32 @@ class NewMovieVC: UIViewController, UITextViewDelegate, UIImagePickerControllerD
     
     @IBAction func createMovie(sender: AnyObject) {
 
+        if let title = movieTitle.text where title != "" {
+            
+            // Set up context for using Core Data
+            let app = UIApplication.sharedApplication().delegate as! AppDelegate
+            let context = app.managedObjectContext
+            let entity = NSEntityDescription.entityForName("Movie", inManagedObjectContext: context)!
+            
+            // Create our instance of Movie
+            let movie = Movie(entity: entity, insertIntoManagedObjectContext: context)
+            movie.title = title
+            movie.movie_description = descriptionTextView.text
+            movie.imdb = imdbLink.text
+            movie.setMovieImage(postImg.image!)
+            
+            // Insert our movie into context
+            context.insertObject(movie)
+            
+            // Save the context
+            do {
+                try context.save()
+            } catch {
+                print("Could not save context")
+            }
+            
+            self.navigationController?.popViewControllerAnimated(true)
+        }
     }
     
     
