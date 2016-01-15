@@ -15,6 +15,8 @@
 		0159F8291C446F2A00CA3C48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0159F8271C446F2A00CA3C48 /* LaunchScreen.storyboard */; };
 		018DD5261C45F47500BBCEF6 /* NewMovieVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */; };
 		018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */; };
+		018DD52F1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */; };
+		018DD5301C48B7A400BBCEF6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52E1C48B7A400BBCEF6 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0159F82A1C446F2A00CA3C48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMovieVC.swift; sourceTree = "<group>"; };
 		018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		018DD52E1C48B7A400BBCEF6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,43 @@
 		0159F81A1C446F2A00CA3C48 /* NicksFlicks */ = {
 			isa = PBXGroup;
 			children = (
+				018DD52C1C48B77400BBCEF6 /* Controller */,
+				018DD52B1C48B76E00BBCEF6 /* View */,
+				018DD52A1C48B76900BBCEF6 /* Model */,
 				0159F81B1C446F2A00CA3C48 /* AppDelegate.swift */,
-				0159F81D1C446F2A00CA3C48 /* ViewController.swift */,
-				0159F81F1C446F2A00CA3C48 /* Main.storyboard */,
 				0159F8251C446F2A00CA3C48 /* Assets.xcassets */,
-				0159F8271C446F2A00CA3C48 /* LaunchScreen.storyboard */,
 				0159F82A1C446F2A00CA3C48 /* Info.plist */,
 				0159F8221C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld */,
-				018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */,
 				018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */,
 			);
 			path = NicksFlicks;
+			sourceTree = "<group>";
+		};
+		018DD52A1C48B76900BBCEF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */,
+				018DD52E1C48B7A400BBCEF6 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		018DD52B1C48B76E00BBCEF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0159F81F1C446F2A00CA3C48 /* Main.storyboard */,
+				0159F8271C446F2A00CA3C48 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		018DD52C1C48B77400BBCEF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0159F81D1C446F2A00CA3C48 /* ViewController.swift */,
+				018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018DD5301C48B7A400BBCEF6 /* Movie.swift in Sources */,
 				0159F81E1C446F2A00CA3C48 /* ViewController.swift in Sources */,
 				0159F81C1C446F2A00CA3C48 /* AppDelegate.swift in Sources */,
 				018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */,
 				018DD5261C45F47500BBCEF6 /* NewMovieVC.swift in Sources */,
+				018DD52F1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift in Sources */,
 				0159F8241C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class NewMovieVC: UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var postImg: UIImageView!
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var addImgBtn: UIButton!
+    @IBOutlet weak var movieTitle: UITextField!
+    @IBOutlet weak var imdbLink: UITextField!
+    
     let DescriptionPlaceholder = "Description"
     var imagePicker: UIImagePickerController!
     
@@ -44,6 +48,15 @@ class NewMovieVC: UIViewController, UITextViewDelegate, UIImagePickerControllerD
         postImg.image = image
         addImgBtn.setTitle("", forState: .Normal)
     }
+    
+    
+    @IBAction func createMovie(sender: AnyObject) {
+
+    }
+    
+    
+    
+    /*** Hide Keyboard ***/
     
     func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.

@@ -183,6 +183,9 @@
                                 <state key="normal" title="Create">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="createMovie:" destination="PmA-zV-8CG" eventType="touchUpInside" id="hWN-IZ-lde"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="IMDB" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxF-zl-f4X">
                                 <rect key="frame" x="180" y="305" width="240" height="30"/>
@@ -231,6 +234,8 @@
                     <connections>
                         <outlet property="addImgBtn" destination="muf-1c-mMb" id="OqK-L6-VlI"/>
                         <outlet property="descriptionTextView" destination="Lei-xK-cVW" id="z8w-9z-Qnc"/>
+                        <outlet property="imdbLink" destination="OxF-zl-f4X" id="uj9-qH-dLj"/>
+                        <outlet property="movieTitle" destination="fgp-Hh-sHw" id="Gi3-e6-NJ1"/>
                         <outlet property="postImg" destination="DJh-0y-ZbW" id="hCu-CB-cX2"/>
                     </connections>
                 </viewController>
