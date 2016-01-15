@@ -17,6 +17,7 @@
 		018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */; };
 		018DD52F1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */; };
 		018DD5301C48B7A400BBCEF6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52E1C48B7A400BBCEF6 /* Movie.swift */; };
+		018DD5321C48BA9F00BBCEF6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5311C48BA9F00BBCEF6 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		018DD52E1C48B7A400BBCEF6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
+		018DD5311C48BA9F00BBCEF6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				0159F81F1C446F2A00CA3C48 /* Main.storyboard */,
 				0159F8271C446F2A00CA3C48 /* LaunchScreen.storyboard */,
+				018DD5311C48BA9F00BBCEF6 /* TableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				018DD5301C48B7A400BBCEF6 /* Movie.swift in Sources */,
+				018DD5321C48BA9F00BBCEF6 /* TableViewCell.swift in Sources */,
 				0159F81E1C446F2A00CA3C48 /* ViewController.swift in Sources */,
 				0159F81C1C446F2A00CA3C48 /* AppDelegate.swift in Sources */,
 				018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */,

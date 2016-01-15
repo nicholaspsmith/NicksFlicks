@@ -33,7 +33,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="aih-Qj-4iU">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="136" id="aih-Qj-4iU" customClass="TableViewCell" customModule="NicksFlicks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aih-Qj-4iU" id="tM4-Ix-UjP">
@@ -73,6 +73,12 @@
                                                 <constraint firstItem="jMS-Dh-lZU" firstAttribute="leading" secondItem="tM4-Ix-UjP" secondAttribute="leadingMargin" constant="19" id="mxg-ar-kPt"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="desc" destination="9i7-au-d3f" id="o8X-JG-wIx"/>
+                                            <outlet property="imdb" destination="S03-5W-BgT" id="L7e-zn-aTy"/>
+                                            <outlet property="img" destination="jMS-Dh-lZU" id="D2t-gE-YHy"/>
+                                            <outlet property="title" destination="umM-Wt-p5f" id="tiE-aq-isc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
