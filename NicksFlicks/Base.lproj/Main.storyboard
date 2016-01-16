@@ -78,6 +78,7 @@
                                             <outlet property="imdb" destination="S03-5W-BgT" id="L7e-zn-aTy"/>
                                             <outlet property="img" destination="jMS-Dh-lZU" id="D2t-gE-YHy"/>
                                             <outlet property="title" destination="umM-Wt-p5f" id="tiE-aq-isc"/>
+                                            <segue destination="NAT-6i-fbw" kind="show" id="clk-mJ-c0f"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -130,6 +131,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="604" y="689"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hue-oN-Ls3">
+            <objects>
+                <viewController id="NAT-6i-fbw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="62W-Ho-4nz"/>
+                        <viewControllerLayoutGuide type="bottom" id="L9p-ht-DHf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yeu-qh-4F0">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3WO-JM-bON">
+                                <rect key="frame" x="257" y="118" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAX-Q0-vEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="1453"/>
         </scene>
         <!--New MovieVC-->
         <scene sceneID="Zkc-SU-nvK">
