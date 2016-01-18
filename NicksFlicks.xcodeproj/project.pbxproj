@@ -18,6 +18,8 @@
 		018DD52F1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */; };
 		018DD5301C48B7A400BBCEF6 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD52E1C48B7A400BBCEF6 /* Movie.swift */; };
 		018DD5321C48BA9F00BBCEF6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018DD5311C48BA9F00BBCEF6 /* TableViewCell.swift */; };
+		01CA37581C4C82A700DFBDB2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA37571C4C82A700DFBDB2 /* DetailVC.swift */; };
+		01CA375B1C4C835500DFBDB2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CA375A1C4C835500DFBDB2 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		018DD52D1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		018DD52E1C48B7A400BBCEF6 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Movie.swift; path = ../Movie.swift; sourceTree = "<group>"; };
 		018DD5311C48BA9F00BBCEF6 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		01CA37571C4C82A700DFBDB2 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		01CA375A1C4C835500DFBDB2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		0159F81A1C446F2A00CA3C48 /* NicksFlicks */ = {
 			isa = PBXGroup;
 			children = (
+				01CA37591C4C834000DFBDB2 /* Services */,
 				018DD52C1C48B77400BBCEF6 /* Controller */,
 				018DD52B1C48B76E00BBCEF6 /* View */,
 				018DD52A1C48B76900BBCEF6 /* Model */,
@@ -73,7 +78,6 @@
 				0159F8251C446F2A00CA3C48 /* Assets.xcassets */,
 				0159F82A1C446F2A00CA3C48 /* Info.plist */,
 				0159F8221C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld */,
-				018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */,
 			);
 			path = NicksFlicks;
 			sourceTree = "<group>";
@@ -102,8 +106,18 @@
 			children = (
 				0159F81D1C446F2A00CA3C48 /* ViewController.swift */,
 				018DD5251C45F47500BBCEF6 /* NewMovieVC.swift */,
+				01CA37571C4C82A700DFBDB2 /* DetailVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		01CA37591C4C834000DFBDB2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				018DD5271C45FA0000BBCEF6 /* UIColorExtension.swift */,
+				01CA375A1C4C835500DFBDB2 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +196,11 @@
 				0159F81E1C446F2A00CA3C48 /* ViewController.swift in Sources */,
 				0159F81C1C446F2A00CA3C48 /* AppDelegate.swift in Sources */,
 				018DD5281C45FA0000BBCEF6 /* UIColorExtension.swift in Sources */,
+				01CA37581C4C82A700DFBDB2 /* DetailVC.swift in Sources */,
 				018DD5261C45F47500BBCEF6 /* NewMovieVC.swift in Sources */,
 				018DD52F1C48B7A400BBCEF6 /* Movie+CoreDataProperties.swift in Sources */,
 				0159F8241C446F2A00CA3C48 /* NicksFlicks.xcdatamodeld in Sources */,
+				01CA375B1C4C835500DFBDB2 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -133,10 +133,10 @@
             </objects>
             <point key="canvasLocation" x="604" y="689"/>
         </scene>
-        <!--View Controller-->
+        <!--DetailVC-->
         <scene sceneID="Hue-oN-Ls3">
             <objects>
-                <viewController id="NAT-6i-fbw" sceneMemberID="viewController">
+                <viewController id="NAT-6i-fbw" customClass="DetailVC" customModule="NicksFlicks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="62W-Ho-4nz"/>
                         <viewControllerLayoutGuide type="bottom" id="L9p-ht-DHf"/>
@@ -189,6 +189,12 @@
                             <constraint firstItem="eUp-aE-tGG" firstAttribute="leading" secondItem="Yeu-qh-4F0" secondAttribute="leadingMargin" constant="-20" id="wPc-CX-ruV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imdbLink" destination="h5j-Tq-H9d" id="Ks8-rk-Br3"/>
+                        <outlet property="img" destination="eUp-aE-tGG" id="KWg-kB-nk3"/>
+                        <outlet property="movieDesc" destination="18z-Wd-v5g" id="vfC-nd-uIu"/>
+                        <outlet property="movieTitle" destination="3WO-JM-bON" id="ZNw-3K-YGA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAX-Q0-vEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
