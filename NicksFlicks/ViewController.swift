@@ -59,6 +59,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        DataService.instance.key = indexPath.row
+        let vc = storyboard?.instantiateViewControllerWithIdentifier("DetailVC") as! DetailVC
+        self.presentViewController(vc, animated: true, completion: nil)
+    }
+    
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

@@ -136,7 +136,7 @@
         <!--DetailVC-->
         <scene sceneID="Hue-oN-Ls3">
             <objects>
-                <viewController id="NAT-6i-fbw" customClass="DetailVC" customModule="NicksFlicks" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="DetailVC" storyboardIdentifier="DetailVC" id="NAT-6i-fbw" customClass="DetailVC" customModule="NicksFlicks" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="62W-Ho-4nz"/>
                         <viewControllerLayoutGuide type="bottom" id="L9p-ht-DHf"/>
